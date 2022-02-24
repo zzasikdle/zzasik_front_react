@@ -8,6 +8,7 @@ import Footer from './component/common/Footer';
 
 
 import {Route, Routes, BrowserRouter} from 'react-router-dom';
+import Join from './component/member/Join';
 
 
 function App() {
@@ -21,7 +22,7 @@ function App() {
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/member/login" element={<Login />} />
-              
+              <Route path="/member/join" element={<Join />} />
               
             </Routes>
           </div>
