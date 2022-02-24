@@ -1,5 +1,4 @@
 import './Login.css';
-import baseUrl from '../../config';
 import React, { useState } from 'react';
 import axios from 'axios';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -9,6 +8,7 @@ import { faLock } from "@fortawesome/free-solid-svg-icons";
 
 const Login = ( ) => {
     
+    const baseUrl = "http://localhost:8090";
 
     const [user_id, setId] = useState(''); // state를 사용하는 이유: front 에서 정보를 저장하여 backend로 보내주기 위함.
     const [user_pwd, setPwd] = useState('');

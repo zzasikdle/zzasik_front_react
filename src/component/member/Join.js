@@ -1,8 +1,10 @@
 import axios from "axios";
 import { useState } from "react";
-import baseUrl from "../../config";
+
 
 const Join = () => {
+
+    const baseUrl = "http://localhost:8090";
 
     const [user_id, setId] = useState(''); 
     const [user_pwd, setPwd] = useState('');
@@ -115,6 +117,7 @@ const Join = () => {
 
     function handleJoin(e) {
 
+        handleId(); // 회원가입 버튼 누르면 그 때서야 user_id state 값 저장하기.
 
         const check = document.getElementById("check");
 
